@@ -38,21 +38,12 @@
   lctl lmet lalt           spc                      ralt comp rmet rctl lft  down   rght
 )
 
-(deflayer e1
-  _    _    _    _    _    _    _    _    _    _    _    _    _         _    _    _
-  @grl _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    q    k    f    d    g    y    m    p    w    ,    _    _    _    _    _    _
-  @cap x    a    s    t    h    u    n    o    i    _    _         _
-  @os1 z    v    c    @rr  @bb  e    l    j    _    _              _         _
-  _    _    _              _                        _    _    _    _    _    _    _
-)
-
 (deflayer mf
   _    _    _    _    _    _    _    _    _    _    _    _    _         _    _    _
   @grl _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    q    w    l    d    v    b    o    u    k    ,    _    _    _    _    _    _
+  _    q    w    l    d    v    f    o    u    k    ,    _    _    _    _    _    _
   @cap x    n    r    t    g    c    a    e    i    _    _         _
-  @os1 z    m    p    @ss  f    h    y    j    _    _              _         _
+  @os1 z    m    p    @ss  b    h    y    j    _    _              _         _
   _    _    _              _                        _    _    _    _    _    _    _
 )
 
@@ -61,28 +52,8 @@
   @grl _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    @й   @ц   @у   @к   @е   @н   @г   @ш   @щ   @з   @х   @ъ   _    _    _    _
   @cap @ф   @ы   @в   @а   @п   @р   @о   @л   @д   @ж   @э        _
-  @rsh @я   @ч   @с   @м   @и   @т   @ь   @б   @ю   .              @rsh      _
+  _    @я   @ч   @с   @м   @и   @т   @ь   @б   @ю   .              _         _
   @rct _    _              _                        _    _    _    @rct _    _    _
-)
-
-;; Russian Uppercase
-(deflayer ruu
-  _    _    _    _    _    _    _    _    _    _    _    _    _         _    _    _
-  @grl _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    @Й   @Ц   @У   @К   @Е   @Н   @Г   @Ш   @Щ   @З   @Х   @Ъ   _    _    _    _
-  @cap @Ф   @Ы   @В   @А   @П   @Р   @О   @Л   @Д   @Ж   @Э        _
-  _    @Я   @Ч   @С   @М   @И   @Т   @Ь   @Б   @Ю   ,              _         _
-  _    _    _              _                        _    _    _    _    _    _    _
-)
-
-;; Russian control layer
-(deflayer rct
-  _    _    _    _    _    _    _    _    _    _    _    _    _         _    _    _
-  _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    C-q  C-k  C-f  C-d  C-g  C-y  C-m  C-p  C-w  _    _    _    _    _    _    _
-  _    C-x  C-a  C-s  C-t  C-h  C-u  C-n  C-o  C-i  _    _         _
-  _    C-z  C-v  C-c  C-r  C-b  C-e  C-l  C-j  _    _              _         _
-  _    _    _              _                        _    _    _    _    _    _    _
 )
 
 (defalias
@@ -90,7 +61,6 @@
   grl (tap-hold 200 200 grv (layer-toggle layers))
 
   ;; layer-switch changes the base layer.
-  e1 (layer-switch e1)
   mf (layer-switch mf)
   ru (layer-switch ru)
   qwr (layer-switch qwerty)
@@ -109,88 +79,53 @@
   dw C-bspc
 
   ;; RU layout
-  rsh (layer-while-held ruu)
-  rct (layer-while-held rct)
+  ;; switch to "control + mf" layer
+  rct (multi lctl (layer-while-held mf))
 
-  й (unicode й)
-  ц (unicode ц)
-  у (unicode у)
-  к (unicode к)
-  е (unicode е)
-  н (unicode н)
-  г (unicode г)
-  ш (unicode ш)
-  щ (unicode щ)
-  з (unicode з)
-  х (unicode х)
-  ъ (unicode ъ)
-  ф (unicode ф)
-  ы (unicode ы)
-  в (unicode в)
-  а (unicode а)
-  п (unicode п)
-  р (unicode р)
-  о (unicode о)
-  л (unicode л)
-  д (unicode д)
-  ж (unicode ж)
-  э (unicode э)
-  я (unicode я)
-  ч (unicode ч)
-  с (unicode с)
-  м (tap-hold 200 200 (unicode м) (layer-toggle syslayer))
-  и (unicode и)
-  т (unicode т)
-  ь (unicode ь)
-  б (unicode б)
-  ю (unicode ю)
-
-  Й (unicode Й)
-  Ц (unicode Ц)
-  У (unicode У)
-  К (unicode К)
-  Е (unicode Е)
-  Н (unicode Н)
-  Г (unicode Г)
-  Ш (unicode Ш)
-  Щ (unicode Щ)
-  З (unicode З)
-  Х (unicode Х)
-  Ъ (unicode Ъ)
-  Ф (unicode Ф)
-  Ы (unicode Ы)
-  В (unicode В)
-  А (unicode А)
-  П (unicode П)
-  Р (unicode Р)
-  О (unicode О)
-  Л (unicode Л)
-  Д (unicode Д)
-  Ж (unicode Ж)
-  Э (unicode Э)
-  Я (unicode Я)
-  Ч (unicode Ч)
-  С (unicode С)
-  М (unicode М)
-  И (unicode И)
-  Т (unicode Т)
-  Ь (unicode Ь)
-  Б (unicode Б)
-  Ю (unicode Ю)
+  й (fork (unicode й) (unicode Й) (lsft rsft))
+  ц (fork (unicode ц) (unicode Ц) (lsft rsft))
+  у (fork (unicode у) (unicode У) (lsft rsft))
+  к (fork (unicode к) (unicode К) (lsft rsft))
+  е (fork (unicode е) (unicode Е) (lsft rsft))
+  н (fork (unicode н) (unicode Н) (lsft rsft))
+  г (fork (unicode г) (unicode Г) (lsft rsft))
+  ш (fork (unicode ш) (unicode Ш) (lsft rsft))
+  щ (fork (unicode щ) (unicode Щ) (lsft rsft))
+  з (fork (unicode з) (unicode З) (lsft rsft))
+  х (fork (unicode х) (unicode Х) (lsft rsft))
+  ъ (fork (unicode ъ) (unicode Ъ) (lsft rsft))
+  ф (fork (unicode ф) (unicode Ф) (lsft rsft))
+  ы (fork (unicode ы) (unicode Ы) (lsft rsft))
+  в (fork (unicode в) (unicode В) (lsft rsft))
+  а (fork (unicode а) (unicode А) (lsft rsft))
+  п (fork (unicode п) (unicode П) (lsft rsft))
+  р (fork (unicode р) (unicode Р) (lsft rsft))
+  о (fork (unicode о) (unicode О) (lsft rsft))
+  л (fork (unicode л) (unicode Л) (lsft rsft))
+  д (fork (unicode д) (unicode Д) (lsft rsft))
+  ж (fork (unicode ж) (unicode Ж) (lsft rsft))
+  э (fork (unicode э) (unicode Э) (lsft rsft))
+  я (fork (unicode я) (unicode Я) (lsft rsft))
+  ч (fork (unicode ч) (unicode Ч) (lsft rsft))
+  с (fork (unicode с) (unicode С) (lsft rsft))
+  м (tap-hold 200 200 (unicode м) (layer-toggle syslayer)) ;; М
+  и (fork (unicode и) (unicode И) (lsft rsft))
+  т (fork (unicode т) (unicode Т) (lsft rsft))
+  ь (fork (unicode ь) (unicode Ь) (lsft rsft))
+  б (fork (unicode б) (unicode Б) (lsft rsft))
+  ю (fork (unicode ю) (unicode Ю) (lsft rsft))
 )
 
 ;; The `lrld` action stands for "live reload". This will re-parse everything
 ;; except for linux-dev, meaning you cannot live reload and switch keyboard
 ;; devices.
 ;;
-;; The keys 1 and 2 switch the base layer to qwerty and dvorak respectively.
-;;
 ;; Apart from the layer switching and live reload, all other keys are the
 ;; underscore _ which means "transparent". Transparent means the base layer
 ;; behaviour is used when pressing that key.
 (deflayer layers
   _    _    _    _    _    _    _    _    _    _    _    _    _         _    _    _
-  _    @e1  @ru  @mf  lrld _    _    _    _    _    _    _    _    _    _    _    _
+  _    @mf  @ru  lrld _    _    _    _    _    _    _    _    _    _    _    _    _
   _    @qwr _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _         _
   _    _    _    _    _    _    _    _    _    _    _              _         _

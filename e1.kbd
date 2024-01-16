@@ -43,7 +43,16 @@
   @grl _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    q    k    f    d    g    y    m    p    w    ,    _    _    _    _    _    _
   @cap x    a    s    t    h    u    n    o    i    _    _         _
-  @os1 z    v    c    @rr  @bb  e    l    j    .    /              _         _
+  @os1 z    v    c    @rr  @bb  e    l    j    _    _              _         _
+  _    _    _              _                        _    _    _    _    _    _    _
+)
+
+(deflayer mf
+  _    _    _    _    _    _    _    _    _    _    _    _    _         _    _    _
+  @grl _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    q    w    l    d    v    b    o    u    k    ,    _    _    _    _    _    _
+  @cap x    n    r    t    g    c    a    e    i    _    _         _
+  @os1 z    m    p    @ss  f    h    y    j    _    _              _         _
   _    _    _              _                        _    _    _    _    _    _    _
 )
 
@@ -82,6 +91,7 @@
 
   ;; layer-switch changes the base layer.
   e1 (layer-switch e1)
+  mf (layer-switch mf)
   ru (layer-switch ru)
   qwr (layer-switch qwerty)
 
@@ -90,6 +100,7 @@
 
   ;; tap: r, hold: toggle to layer
   rr (tap-hold 200 200 r (layer-toggle syslayer))
+  ss (tap-hold 200 200 s (layer-toggle syslayer))
   vv (tap-hold 200 200 v (layer-toggle syslayer))
 
   bb (tap-hold 200 200 b (layer-toggle brackets))
@@ -179,7 +190,7 @@
 ;; behaviour is used when pressing that key.
 (deflayer layers
   _    _    _    _    _    _    _    _    _    _    _    _    _         _    _    _
-  _    @e1  @ru  lrld _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    @e1  @ru  @mf  lrld _    _    _    _    _    _    _    _    _    _    _    _
   _    @qwr _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _         _
   _    _    _    _    _    _    _    _    _    _    _              _         _

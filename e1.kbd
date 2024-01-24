@@ -42,7 +42,7 @@
   _    _    _    _    _    _    _    _    _    _    _    _    _         _    _    _
   @grl _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    q    w    l    d    v    /    j    o    u    k    _    _    _    _    _    _
-  @cap x    n    r    t    h    '    g    a    e    i    _         _
+  @cap x    n    @rr  t    h    '    g    a    e    i    _         _
   @os1 z    m    p    @ss  b    f    c    y    ,    .              _         _
   _    _    _              _                        @os2 _    _    _    _    _    _
 )
@@ -69,7 +69,7 @@
   cap (tap-hold 200 200 esc (layer-toggle control))
 
   ;; tap: r, hold: toggle to layer
-  rr (tap-hold 200 200 r (layer-toggle syslayer))
+  rr (tap-hold 200 200 r (layer-toggle default_shortcuts))
   ss (tap-hold 200 200 s (layer-toggle syslayer))
   vv (tap-hold 200 200 v (layer-toggle syslayer))
 
@@ -158,4 +158,13 @@
   _    C-a  C-s  _    _    _    _    _    _    _    _    _         _
   _    C-z  C-x  C-c  C-v  _    _    _    _    _    _              _         _
   _    _    _              _                        _    _    _    _    _    _    _
+)
+
+(deflayer default_shortcuts
+  _    _    _    _    _    _    _    _    _    _    _    _    _         _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    C-z  _    C-c  C-v  _    _    _    _    _    _         _
+  _    _    _    C-x  C-s  _    _    _    _    _    _              _         _
+  _    _    _              C-a                      _    _    _    _    _    _    _
 )

@@ -41,10 +41,10 @@
 (deflayer mf
   _    _    _    _    _    _    _    _    _    _    _    _    _         _    _    _
   @grl _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    q    w    l    d    v    '    /    o    u    k    _    _    _    _    _    _
-  @cap x    n    r    t    h    ,    g    a    e    i    _         _
-  @os1 z    m    p    @ss  b    f    c    y    j    .              _         _
-  _    _    _              _                        _    _    _    _    _    _    _
+  _    q    w    l    d    v    /    j    o    u    k    _    _    _    _    _    _
+  @cap x    n    r    t    h    '    g    a    e    i    _         _
+  @os1 z    m    p    @ss  b    f    c    y    ,    .              _         _
+  _    _    _              _                        @os2 _    _    _    _    _    _
 )
 
 (deflayer ru

@@ -53,7 +53,7 @@
   _    @й   @ц   @у   @к   @е   @н   @г   @ш   @щ   @з   @х   @ъ   _    _    _    _
   @cap @ф   @ы   @в   @а   @п   @р   @о   @л   @д   @ж   @э        _
   _    @я   @ч   @с   @м   @и   @т   @ь   @б   @ю   .              _         _
-  @rct _    _              _                        _    _    _    @rct _    _    _
+  @rct @rwn _              _                        _    _    _    @rct _    _    _
 )
 
 (defalias
@@ -79,6 +79,7 @@
   ;; RU layout
   ;; switch to "control + mf" layer
   rct (multi lctl (layer-while-held mf))
+  rwn (multi lmet (layer-while-held mf))
 
   й (fork (unicode й) (unicode Й) (lsft rsft))
   ц (fork (unicode ц) (unicode Ц) (lsft rsft))

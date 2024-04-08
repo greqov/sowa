@@ -1,8 +1,10 @@
 # Kanata conf
 
-_Config file for kanata keyboard remapper_
+_Config file for [kanata](https://github.com/jtroo/kanata) keyboard remapper_
 
 ## Quick start
+
+See [Linux setup](https://github.com/jtroo/kanata/blob/main/docs/setup-linux.md) docs.
 
 ```bash
 kanata --cfg e1.kbd
@@ -16,4 +18,9 @@ kanata --cfg e1.kbd
 
 ## Usage tips
 
-- ...
+- `~ + q` switch to QWERTY, `~ + 1` switch to Maya
+
+## TODO
+
+- [ ] pick proper name for custom layout;
+- [ ] add fancy images with layout and heatmaps;

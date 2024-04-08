@@ -47,22 +47,12 @@
   _    _    _              _                        @os2 _    _    _    _    _    _
 )
 
-(deflayer ru
-  _    _    _    _    _    _    _    _    _    _    _    _    _         _    _    _
-  @grl _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    @й   @ц   @у   @к   @е   @н   @г   @ш   @щ   @з   @х   @ъ   _    _    _    _
-  @cap @ф   @ы   @в   @а   @п   @р   @о   @л   @д   @ж   @э        _
-  _    @я   @ч   @с   @м   @и   @т   @ь   @б   @ю   .              _         _
-  @rct @rwn _              _                        _    _    _    @rct _    _    _
-)
-
 (defalias
   ;; tap: backtick (grave), hold: toggle layer-switching layer while held
   grl (tap-hold 200 200 grv (layer-toggle layers))
 
   ;; layer-switch changes the base layer.
   mf (layer-switch mf)
-  ru (layer-switch ru)
   qwr (layer-switch qwerty)
 
   ;; tap for esc, hold for ctrl layer
@@ -75,44 +65,6 @@
 
   ;; delete a word
   dw C-bspc
-
-  ;; RU layout
-  ;; switch to "control + mf" layer
-  rct (multi lctl (layer-while-held mf))
-  rwn (multi lmet (layer-while-held mf))
-
-  й (fork (unicode й) (unicode Й) (lsft rsft))
-  ц (fork (unicode ц) (unicode Ц) (lsft rsft))
-  у (fork (unicode у) (unicode У) (lsft rsft))
-  к (fork (unicode к) (unicode К) (lsft rsft))
-  е (fork (unicode е) (unicode Е) (lsft rsft))
-  н (fork (unicode н) (unicode Н) (lsft rsft))
-  г (fork (unicode г) (unicode Г) (lsft rsft))
-  ш (fork (unicode ш) (unicode Ш) (lsft rsft))
-  щ (fork (unicode щ) (unicode Щ) (lsft rsft))
-  з (fork (unicode з) (unicode З) (lsft rsft))
-  х (fork (unicode х) (unicode Х) (lsft rsft))
-  ъ (fork (unicode ъ) (unicode Ъ) (lsft rsft))
-  ф (fork (unicode ф) (unicode Ф) (lsft rsft))
-  ы (fork (unicode ы) (unicode Ы) (lsft rsft))
-  в (fork (unicode в) (unicode В) (lsft rsft))
-  а (fork (unicode а) (unicode А) (lsft rsft))
-  п (fork (unicode п) (unicode П) (lsft rsft))
-  р (fork (unicode р) (unicode Р) (lsft rsft))
-  о (fork (unicode о) (unicode О) (lsft rsft))
-  л (fork (unicode л) (unicode Л) (lsft rsft))
-  д (fork (unicode д) (unicode Д) (lsft rsft))
-  ж (fork (unicode ж) (unicode Ж) (lsft rsft))
-  э (fork (unicode э) (unicode Э) (lsft rsft))
-  я (fork (unicode я) (unicode Я) (lsft rsft))
-  ч (fork (unicode ч) (unicode Ч) (lsft rsft))
-  с (fork (unicode с) (unicode С) (lsft rsft))
-  м (tap-hold 200 200 (unicode м) (layer-toggle syslayer)) ;; М
-  и (fork (unicode и) (unicode И) (lsft rsft))
-  т (fork (unicode т) (unicode Т) (lsft rsft))
-  ь (fork (unicode ь) (unicode Ь) (lsft rsft))
-  б (fork (unicode б) (unicode Б) (lsft rsft))
-  ю (fork (unicode ю) (unicode Ю) (lsft rsft))
 )
 
 ;; The `lrld` action stands for "live reload". This will re-parse everything
@@ -124,7 +76,7 @@
 ;; behaviour is used when pressing that key.
 (deflayer layers
   _    _    _    _    _    _    _    _    _    _    _    _    _         _    _    _
-  _    @mf  @ru  lrld _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    @mf  lrld _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    @qwr _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _         _
   _    _    _    _    _    _    _    _    _    _    _              _         _

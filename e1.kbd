@@ -1,3 +1,9 @@
+;; Not sure about this option
+;; See docs: https://github.com/jtroo/kanata/blob/main/docs/config.adoc#process-unmapped-keys
+(defcfg
+  process-unmapped-keys yes
+)
+
 ;; Only one defsrc is allowed.
 ;;
 ;; defsrc defines the keys that will be intercepted by kanata. The order of the

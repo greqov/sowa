@@ -49,19 +49,19 @@
 
 (defalias
   ;; tap: backtick (grave), hold: toggle layer-switching layer while held
-  grl (tap-hold 200 200 grv (layer-toggle layers))
+  grl (tap-hold 200 200 grv (layer-while-held layers))
 
   ;; layer-switch changes the base layer.
   mf (layer-switch mf)
   qwr (layer-switch qwerty)
 
   ;; tap for esc, hold for ctrl layer
-  cap (tap-hold 200 200 esc (layer-toggle control))
+  cap (tap-hold 200 200 esc (layer-while-held control))
 
   ;; tap: r, hold: toggle to layer
-  rr (tap-hold 200 200 r (layer-toggle default_shortcuts))
-  ss (tap-hold 200 200 s (layer-toggle syslayer))
-  vv (tap-hold 200 200 v (layer-toggle syslayer))
+  rr (tap-hold 200 200 r (layer-while-held default_shortcuts))
+  ss (tap-hold 200 200 s (layer-while-held syslayer))
+  vv (tap-hold 200 200 v (layer-while-held syslayer))
 
   ;; delete a word
   dw C-bspc

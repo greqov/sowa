@@ -49,8 +49,8 @@
   @grl _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    q    w    l    d    v    /    j    o    u    k    _    _    _    _    _    _
   @cap x    n    @rr  t    h    '    g    a    e    i    ;         _
-  @os1 z    m    p    @ss  b    f    c    y    ,    .              _         _
-  _    _    _              _                        @os2 _    _    _    _    _    _
+  _    z    m    p    @ss  b    f    c    y    ,    .              _         _
+  _    _    _              _                        _    _    _    _    _    _    _
 )
 
 (defalias
@@ -62,10 +62,10 @@
   qwr (layer-switch qwerty)
 
   ;; tap for esc, hold for ctrl layer
-  cap (tap-hold 200 200 esc (layer-while-held control))
+  cap (tap-hold 200 200 esc (layer-while-held vanilla_ctrl))
 
   ;; tap: r, hold: toggle to layer
-  rr (tap-hold 200 200 r (layer-while-held default_shortcuts))
+  rr (tap-hold 200 200 r (layer-while-held mods))
   ss (tap-hold 200 200 s (layer-while-held syslayer))
   vv (tap-hold 200 200 v (layer-while-held syslayer))
 
@@ -94,8 +94,11 @@
   td2 (tap-dance 200 (- S-- esc))   ;; - _
   td3 (tap-dance 200 (= + esc))     ;; = +
   td5 (tap-dance 200 (' S-' esc))   ;; ' "
-  os1 (one-shot-press 2000 lsft)
-  os2 (one-shot-press 2000 lctl)
+
+  1c (one-shot-press 2000 lctl)
+  1s (one-shot-press 2000 lsft)
+  1a (one-shot-press 2000 lalt)
+
   com (macro , spc) ;; comma with space
 
   cw (caps-word 2000) ;; caps word
@@ -104,13 +107,13 @@
 (deflayer syslayer
   _    _    _    _    _    _    _    _    _    _    _    _    _         _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    _    _    _    _    _    bspc @dw  @td5 del  _    _    _    _    _    _
-  _    _    @cw  _    _    _    _    lft  down up   rght _         _
-  _    _    _    @com _    @td1 _    ret  @td2 @td3 _              _         _
-  _    _    _              @os1                     _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    bspc @dw  _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    lft  down up   rght _         _
+  _    _    _    _    _    _    _    ret  tab  _    _              _         _
+  _    _    _              _                        _    _    _    _    _    _    _
 )
 
-(deflayer control
+(deflayer vanilla_ctrl
   _    _    _    _    _    _    _    _    _    _    _    _    _         _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
@@ -119,11 +122,11 @@
   _    _    _              _                        _    _    _    _    _    _    _
 )
 
-(deflayer default_shortcuts
+(deflayer mods
   _    _    _    _    _    _    _    _    _    _    _    _    _         _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    _    _    C-c  C-v  _    _    _    _    _    _         _
-  _    _    _    _    C-s  _    _    _    _    _    _              _         _
+  _    _    _    _    C-c  C-v  _    _    @1s  @1a  _    _         _
+  _    _    _    _    C-s  _    _    @1c  _    _    _              _         _
   _    _    _              _                        _    _    _    _    _    _    _
 )

@@ -48,7 +48,7 @@
   _    _    _    _    _    _    _    _    _    _    _    _    _         _    _    _
   @grl _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    q    w    l    d    v    /    j    o    u    k    _    _    _    _    _    _
-  @cap x    n    @rr  t    h    '    g    a    e    i    ;         _
+  @cap x    n    @rr  @tt  h    '    g    a    e    i    ;         _
   _    z    m    p    @ss  b    f    c    y    ,    .              _         _
   _    _    _              _                        _    _    _    _    _    _    _
 )
@@ -68,6 +68,7 @@
   rr (tap-hold 200 200 r (layer-while-held mods))
   ss (tap-hold 200 200 s (layer-while-held syslayer))
   vv (tap-hold 200 200 v (layer-while-held syslayer))
+  tt (tap-hold 200 200 t (layer-while-held typing))
 
   ;; delete a word
   dw C-bspc
@@ -90,9 +91,10 @@
 )
 
 (defalias
-  td1 (tap-dance 200 (S-1 S-/ esc)) ;; ! ?
+  td1 (tap-dance 300 (S-1 S-/ S-2 esc)) ;; ! ? @
   td2 (tap-dance 200 (- S-- esc))   ;; - _
   td3 (tap-dance 200 (= + esc))     ;; = +
+
   td5 (tap-dance 200 (' S-' esc))   ;; ' "
 
   1c (one-shot-press 2000 lctl)
@@ -100,6 +102,7 @@
   1a (one-shot-press 2000 lalt)
 
   com (macro , spc) ;; comma with space
+  hm (macro S-` /) ;; ~/
 
   cw (caps-word 2000) ;; caps word
 )
@@ -107,9 +110,18 @@
 (deflayer syslayer
   _    _    _    _    _    _    _    _    _    _    _    _    _         _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    _    _    _    _    _    bspc @dw  _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    bspc @dw  esc  _    _    _    _    _    _    _
   _    _    _    _    _    _    _    lft  down up   rght _         _
-  _    _    _    _    _    _    _    ret  tab  _    _              _         _
+  _    _    _    @com _    _    _    ret  tab  _    _              _         _
+  _    _    _              _                        _    _    _    _    _    _    _
+)
+
+(deflayer typing
+  _    _    _    _    _    _    _    _    _    _    _    _    _         _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    bspc @dw  '    S-'  _    _    _    _    _    _
+  _    _    _    _    _    @td1 @hm  @td3 @td2 _    _    _         _
+  _    _    _    _    _    _    _    S-;  /    _    _              _         _
   _    _    _              _                        _    _    _    _    _    _    _
 )
 
@@ -125,8 +137,8 @@
 (deflayer mods
   _    _    _    _    _    _    _    _    _    _    _    _    _         _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    C-x  _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    C-c  C-v  _    _    @1s  @1a  _    _         _
-  _    _    _    _    C-s  _    _    @1c  _    _    _              _         _
+  _    _    _    C-z  C-s  _    _    @1c  _    _    _              _         _
   _    _    _              _                        _    _    _    _    _    _    _
 )

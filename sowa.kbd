@@ -44,7 +44,7 @@
   lctl lmet lalt           spc                      ralt comp rmet rctl lft  down   rght
 )
 
-(deflayer mf
+(deflayer sowa
   _    _    _    _    _    _    _    _    _    _    _    _    _         _    _    _
   @grl _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    q    w    l    d    v    /    j    o    u    k    _    _    _    _    _    _
@@ -58,7 +58,7 @@
   grl (tap-hold 200 200 grv (layer-while-held layers))
 
   ;; layer-switch changes the base layer.
-  mf (layer-switch mf)
+  sw (layer-switch sowa)
   qwr (layer-switch qwerty)
 
   ;; tap for esc, hold for ctrl layer
@@ -83,7 +83,7 @@
 ;; behaviour is used when pressing that key.
 (deflayer layers
   _    _    _    _    _    _    _    _    _    _    _    _    _         _    _    _
-  _    @mf  lrld _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    @sw  lrld _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    @qwr _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _         _
   _    _    _    _    _    _    _    _    _    _    _              _         _

@@ -1,9 +1,9 @@
-// Maya
+// SOWA
 partial alphanumeric_keys
-xkb_symbols "ru_maya" {
+xkb_symbols "r1" {
 
     include "ru(common)"
-    name[Group1]= "Russian (Maya)";
+    name[Group1]= "Russian (SOWA)";
 
     key <AE03>  {[               3,      numerosign      ]};
     key <AE04>  {[               4,       semicolon      ]};

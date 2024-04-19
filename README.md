@@ -13,6 +13,7 @@ kanata --cfg sowa.kbd
 ## Features
 
 - 2 layouts: default QWERTY, custom SOWA layout;
+- complimentary ЙЦУКЕН layout;
 - custom layers: shortcuts, punctuation, etc;
 - small QoL features like capitalize a word or sticky keys.
 
@@ -21,10 +22,45 @@ kanata --cfg sowa.kbd
 - `~ + q` switch to QWERTY, `~ + 1` switch to SOWA
 - `~ + 2` live reload kanata config
 
+## Adding/restoring ЙЦУКЕН layout
+
+Any custom layout reshuffles keys for other languages. To be able to use (almost!) default Russian ЙЦУКЕН layout you have to do the following:
+
+1. Add new symbols to system:
+
+```
+sudo ln -sr r1 /usr/share/X11/xkb/symbols/
+```
+
+2. Add new rules to system:
+
+```
+sudo micro /usr/share/X11/xkb/rules/evdev.xml
+```
+
+Paste these lines somewhere near Russian layouts:
+
+```
+<!-- SOWA -->
+<layout>
+  <configItem>
+    <name>r1</name>
+    <shortDescription>Russian (SOWA)</shortDescription>
+    <description>Russian (SOWA)</description>
+    <languageList>
+      <iso639Id>rus</iso639Id>
+    </languageList>
+  </configItem>
+</layout>
+```
+
+3. Add new `Russian (SOWA)` layout in settings (or `setxkbmap`) as usual.
+
 ## TODO
 
-- [ ] pick proper name for custom layout;
+- [x] pick proper name for custom layout;
 - [ ] add fancy images with layout and heatmaps;
 - [ ] switch K and J keys;
 - [ ] add philosophy, pros/cons section;
-- [ ] how to add (restore) RU layout;
+- [x] how to add (restore) RU layout;
+- [ ] describe differences to RU layout coz it's wider too;

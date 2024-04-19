@@ -56,6 +56,10 @@ Paste these lines somewhere near Russian layouts:
 
 3. Add new `Russian (SOWA)` layout in settings (or `setxkbmap`) as usual.
 
+## Links
+
+- [Linux: How to make your own keyboard layout](https://lipanski.com/posts/custom-keyboard-layout) by Florin Lipan;
+
 ## TODO
 
 - [x] pick proper name for custom layout;

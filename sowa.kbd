@@ -49,7 +49,7 @@
   @grl _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    q    w    l    d    v    /    j    o    u    k    _    _    _    _    _    _
   @cap x    n    @rr  @tt  h    '    g    a    e    i    ;         _
-  _    z    m    p    @ss  b    f    c    y    ,    .              _         _
+  _    z    m    p    @ss  b    f    @cc  y    ,    .              _         _
   _    _    _              _                        _    _    _    _    _    _    _
 )
 
@@ -69,6 +69,7 @@
   ss (tap-hold 200 200 s (layer-while-held syslayer))
   vv (tap-hold 200 200 v (layer-while-held syslayer))
   tt (tap-hold 200 200 t (layer-while-held typing))
+  cc (tap-hold 200 200 c (layer-while-held cc))
 
   ;; delete a word
   dw C-bspc
@@ -101,7 +102,7 @@
   1s (one-shot-press 2000 lsft)
   1a (one-shot-press 2000 lalt)
 
-  com (macro , spc) ;; comma with space
+  ;; com (macro , spc) ;; comma with space
   hm (macro S-` /) ;; ~/
 
   cw (caps-word 2000) ;; caps word
@@ -112,7 +113,7 @@
   _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    bspc @dw  esc  _    _    _    _    _    _    _
   _    _    _    _    _    _    _    lft  down up   rght _         _
-  _    _    _    @com _    _    _    ret  tab  _    _              _         _
+  _    @1a  @1s  @1c  _    _    _    ret  tab  _    _              _         _
   _    _    _              _                        _    _    _    _    _    _    _
 )
 
@@ -138,7 +139,16 @@
   _    _    _    _    _    _    _    _    _    _    _    _    _         _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    C-x  _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    _    _    C-c  C-v  _    _    @1s  @1a  _    _         _
-  _    _    _    C-z  C-s  _    _    @1c  _    _    _              _         _
+  _    _    _    _    C-c  C-v  _    _    _    _    _    _         _
+  _    _    _    C-z  C-s  _    _    _    _    _    _              _         _
+  _    _    _              _                        _    _    _    _    _    _    _
+)
+
+(deflayer cc
+  _    _    _    _    _    _    _    _    _    _    _    _    _         _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _         _
+  _    _    _    _    _    _    _    _    @1c  @1s  @1a            _         _
   _    _    _              _                        _    _    _    _    _    _    _
 )

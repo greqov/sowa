@@ -41,7 +41,7 @@
   tab  q    w    e    r    t    y    u    i    o    p    [    ]    \    del  end    pgdn
   caps a    s    d    f    g    h    j    k    l    ;    '         ret
   lsft z    x    c    @vv  b    n    m    ,    .    /              rsft      up
-  lctl lmet lalt           spc                      ralt comp rmet rctl lft  down   rght
+  lctl lmet lalt           spc                      @ra  comp rmet rctl lft  down   rght
 )
 
 (deflayer sowa
@@ -50,12 +50,13 @@
   _    q    w    l    d    v    /    j    o    u    k    _    _    _    _    _    _
   @cap x    n    @rr  @tt  h    '    g    a    e    i    ;         _
   _    z    m    p    @ss  b    f    @cc  y    ,    .              _         _
-  _    _    _              _                        _    _    _    _    _    _    _
+  _    _    _              _                        @ra  _    _    _    _    _    _
 )
 
 (defalias
   ;; tap: backtick (grave), hold: toggle layer-switching layer while held
   grl (tap-hold 200 200 grv (layer-while-held layers))
+  ra (tap-hold 200 200 ralt (layer-while-held layers))
 
   ;; layer-switch changes the base layer.
   sw (layer-switch sowa)

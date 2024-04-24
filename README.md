@@ -19,6 +19,8 @@ kanata --cfg sowa.kbd
 
 ## Usage tips
 
+Use `~` or `ralt` to switch layers:
+
 - `~ + q` switch to QWERTY, `~ + 1` switch to SOWA
 - `~ + 2` live reload kanata config
 

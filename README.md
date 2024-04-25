@@ -6,6 +6,8 @@ _Custom keyboard layout. Powered by [kanata](https://github.com/jtroo/kanata) ke
 
 See [Linux setup](https://github.com/jtroo/kanata/blob/main/docs/setup-linux.md) docs.
 
+There are 2 config files: `sowa.kbd` for TKL-87 keyboard, `sowa-60.kbd` for 60% keyboard.
+
 ```bash
 kanata --cfg sowa.kbd
 ```
@@ -19,10 +21,16 @@ kanata --cfg sowa.kbd
 
 ## Usage tips
 
-Use `~` or `ralt` to switch layers:
+Use `~` (or `ralt`) to switch layers:
 
 - `~ + q` switch to QWERTY, `~ + 1` switch to SOWA
 - `~ + 2` live reload kanata config
+
+Use `tab` for 60% keyboard:
+
+ - `tab + r` live reload kanata config
+ - `tab + q` switch to QWERTY layout
+ - `tab + w` switch to SOWA layout
 
 ## Adding/restoring ЙЦУКЕН layout
 

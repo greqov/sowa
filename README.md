@@ -2,6 +2,8 @@
 
 _Custom keyboard layout. Powered by [kanata](https://github.com/jtroo/kanata) keyboard remapper._
 
+![SOWA layout showcase](showcase.png)
+
 ## Quick start
 
 See [Linux setup](https://github.com/jtroo/kanata/blob/main/docs/setup-linux.md) docs.

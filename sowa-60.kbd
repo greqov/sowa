@@ -51,7 +51,7 @@
   @tab q    w    l    d    v    /    j    o    u    k    _    _    _
   @cap x    n    @r   @t   h    '    g    a    e    i    ;         _
   _    z    m    p    @s   b    f    @c   y    ,    .         _    _
-  _    _    _              _                   _    _    _    _    _
+  _    _    _              _                   @ra  _    _    _    _
 )
 
 (defalias
@@ -84,6 +84,13 @@
   td5 (tap-dance 200 (' S-' esc))   ;; ' "
   hm (macro S-` /) ;; ~/
   cw (caps-word 2000) ;; caps word
+
+  ra (switch
+    (lsft) lsft fallthrough
+    (lctl) lctl fallthrough
+    (lalt) lalt fallthrough
+    () (layer-while-held FF) break
+  )
 )
 
 (deflayer layers
@@ -131,5 +138,13 @@
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _         _
   _    _    _    _    _    _    _    _    @1c  @1s  @1a       _    _
+  _    _    _              _                   _    _    _    _    _
+)
+
+(deflayer FF
+  _    f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _         _
+  _    _    _    _    _    _    _    _    _    _    _         _    _
   _    _    _              _                   _    _    _    _    _
 )

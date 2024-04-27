@@ -60,7 +60,7 @@
   qwr (layer-switch qwerty)
 
   ;; tap: tab, hold: switch to layer
-  tab (tap-hold 200 200 esc (layer-while-held layers))
+  tab (tap-hold 200 200 tab (layer-while-held layers))
 
   ;; tap for esc, hold for ctrl layer
   cap (tap-hold 200 200 esc (layer-while-held vanilla_ctrl))

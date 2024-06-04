@@ -33,10 +33,7 @@
 |#
 
 ;; The first layer defined is the layer that will be active by default when
-;; kanata starts up. This layer is the standard QWERTY layout except for the
-;; backtick/grave key (@grl) which is an alias for a tap-hold key.
-;;
-;; There are currently a maximum of 25 layers allowed.
+;; kanata starts up. This layer is the standard QWERTY layout.
 
 (deflayer qwerty
   esc  1    2    3    4    5    6    7    8    9    0    -    =    bspc
@@ -55,7 +52,7 @@
 )
 
 (defalias
-  ;; layer-switch changes the base layer.
+  ;; layer-switch changes the base layer
   sw (layer-switch sowa)
   qwr (layer-switch qwerty)
 
@@ -128,7 +125,7 @@
 (deflayer mods
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    C-x  _    _    _    _    _    _    _    _    _
-  _    _    _    _    C-c  C-v  _    _    _    _    _    _         _
+  _    _    C-a  _    C-c  C-v  _    _    _    _    _    _         _
   _    _    _    C-z  C-s  _    _    _    _    _    _         _    _
   _    _    _              _                   _    _    _    _    _
 )

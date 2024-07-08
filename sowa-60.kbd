@@ -5,6 +5,7 @@
 
 (defcfg
   process-unmapped-keys yes
+  concurrent-tap-hold yes
 )
 
 ;; Only one defsrc is allowed.
@@ -45,9 +46,9 @@
 
 (deflayer sowa
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  @tab q    w    l    d    v    /    j    o    u    k    _    _    _
-  @cap x    n    @r   @t   h    '    g    a    e    i    ;         _
-  _    z    m    p    @s   b    f    @c   y    ,    .         _    _
+  @tab q    w    h    d    v    /    j    o    u    k    _    _    _
+  @cap x    r    @n   @t   l    '    p    a    e    i    ;         _
+  _    z    b    m    @s   f    g    @c   y    ,    .         _    _
   _    _    _              _                   @ra  _    _    _    _
 )
 
@@ -62,8 +63,8 @@
   ;; tap for esc, hold for ctrl layer
   cap (tap-hold 200 200 esc (layer-while-held vanilla_ctrl))
 
-  ;; tap: r, hold: toggle to layer
-  r (tap-hold 200 200 r (layer-while-held mods))
+  ;; tap: n, hold: toggle to layer
+  n (tap-hold 200 200 n (layer-while-held mods))
   s (tap-hold 200 200 s (layer-while-held syslayer))
   c (tap-hold 200 200 c (layer-while-held cc))
   t (tap-hold 200 200 t (layer-while-held typing))

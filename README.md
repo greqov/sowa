@@ -34,11 +34,14 @@ Use `tab` for 60% keyboard:
  - `tab + q` switch to QWERTY layout
  - `tab + w` switch to SOWA layout
 
-## Adding/restoring ЙЦУКЕН layout
+## Adding/restoring ЙЦУКЕН/cyrillic layout
 
 Any custom layout reshuffles keys for other languages. To be able to use (almost!) default Russian ЙЦУКЕН layout you have to do the following:
 
-1. Add new symbols to system:
+1. Add new symbols (`r1` or `r2`) to system:
+
+- `r1` refers to ЙЦУКЕН layout;
+- `r2` refers to custom cyrillic layout.
 
 ```
 sudo ln -sr r1 /usr/share/X11/xkb/symbols/
@@ -50,7 +53,7 @@ sudo ln -sr r1 /usr/share/X11/xkb/symbols/
 sudo micro /usr/share/X11/xkb/rules/evdev.xml
 ```
 
-Paste these lines somewhere near Russian layouts:
+Paste these lines (with proper name `r1` or `r2`) somewhere near Russian layouts (tip! search for `<description>Russian</description>` to locate those rules):
 
 ```
 <!-- SOWA -->
@@ -80,3 +83,4 @@ Paste these lines somewhere near Russian layouts:
 - [ ] add philosophy, pros/cons section;
 - [x] how to add (restore) RU layout;
 - [ ] describe differences to RU layout coz it's wider too;
+- [ ] add `r2` layout description;

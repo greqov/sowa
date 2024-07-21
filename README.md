@@ -69,7 +69,7 @@ Paste these lines (with proper name `r1` or `r2`) somewhere near Russian layouts
 </layout>
 ```
 
-3. Add new `Russian (SOWA)` layout in settings (or `setxkbmap`) as usual.
+3. Add new `Russian (SOWA)` layout in settings (or `setxkbmap`) as usual (`setxkbmap -layout us,r1`).
 
 ## Links
 

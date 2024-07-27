@@ -33,12 +33,12 @@ xkb_symbols "r2" {
     key <AC05>	{[       Cyrillic_de,       Cyrillic_DE  ]};
     key <AC06>	{[     Cyrillic_yeru,     Cyrillic_YERU  ]};
     key <AC07>	{[       Cyrillic_be,       Cyrillic_BE  ]};
-    key <AC08>	{[      Cyrillic_che,      Cyrillic_CHE  ]};
+    key <AC08>	{[       Cyrillic_yu,       Cyrillic_YU  ]};
     key <AC09>	{[       Cyrillic_ya,       Cyrillic_YA  ]};
     key <AC10>	{[      Cyrillic_zhe,      Cyrillic_ZHE  ]};
     key <AC11>	{[       Cyrillic_ef,       Cyrillic_EF  ]};
 
-    key <AB01>	{[       Cyrillic_yu,       Cyrillic_YU  ]};
+    key <AB01>	{[      Cyrillic_che,      Cyrillic_CHE  ]};
     key <AB02>	{[       Cyrillic_ze,       Cyrillic_ZE  ]};
     key <AB03>	{[       Cyrillic_te,       Cyrillic_TE  ]};
     key <AB04>	{[      Cyrillic_tse,      Cyrillic_TSE  ]};

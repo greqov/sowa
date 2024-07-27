@@ -29,24 +29,24 @@ xkb_symbols "r2" {
     key <AC01>	{[       Cyrillic_en,       Cyrillic_EN  ]};
     key <AC02>	{[       Cyrillic_ie,       Cyrillic_IE  ]};
     key <AC03>	{[   Cyrillic_shorti,   Cyrillic_SHORTI  ]};
-    key <AC04>	{[       Cyrillic_ka,       Cyrillic_KA  ]};
+    key <AC04>	{[       Cyrillic_ya,       Cyrillic_YA  ]};
     key <AC05>	{[       Cyrillic_de,       Cyrillic_DE  ]};
     key <AC06>	{[     Cyrillic_yeru,     Cyrillic_YERU  ]};
-    key <AC07>	{[       Cyrillic_be,       Cyrillic_BE  ]};
+    key <AC07>	{[      Cyrillic_tse,      Cyrillic_TSE  ]};
     key <AC08>	{[       Cyrillic_yu,       Cyrillic_YU  ]};
-    key <AC09>	{[       Cyrillic_ya,       Cyrillic_YA  ]};
+    key <AC09>	{[       Cyrillic_ka,       Cyrillic_KA  ]};
     key <AC10>	{[      Cyrillic_zhe,      Cyrillic_ZHE  ]};
     key <AC11>	{[       Cyrillic_ef,       Cyrillic_EF  ]};
 
     key <AB01>	{[      Cyrillic_che,      Cyrillic_CHE  ]};
     key <AB02>	{[       Cyrillic_ze,       Cyrillic_ZE  ]};
     key <AB03>	{[       Cyrillic_te,       Cyrillic_TE  ]};
-    key <AB04>	{[      Cyrillic_tse,      Cyrillic_TSE  ]};
+    key <AB04>	{[    Cyrillic_shcha,    Cyrillic_SHCHA  ]};
     key <AB05>	{[        Cyrillic_u,        Cyrillic_U  ]};
     key <AB06>	{[        Cyrillic_o,        Cyrillic_O  ]};
     key <AB07>	{[ Cyrillic_softsign, Cyrillic_SOFTSIGN, Cyrillic_hardsign, Cyrillic_HARDSIGN  ]};
     key <AB08>	{[       Cyrillic_em,       Cyrillic_EM  ]};
-    key <AB09>	{[    Cyrillic_shcha,    Cyrillic_SHCHA  ]};
+    key <AB09>	{[       Cyrillic_be,       Cyrillic_BE  ]};
     key <AB10>	{[       Cyrillic_ha,       Cyrillic_HA  ]}; // Cyrillic_HARDSIGN
 
     include "level3(ralt_switch)"

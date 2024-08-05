@@ -44,11 +44,20 @@
   lctl lmet lalt           spc                 ralt left down rght cmp
 )
 
+;; (deflayer sowa
+;;   _    _    _    _    _    _    _    _    _    _    _    _    _    _
+;;   @tab q    w    h    d    v    /    j    o    u    z    _    _    _
+;;   @cap x    r    @n   @t   l    '    p    a    e    i    ;         _
+;;   _    k    b    m    @s   f    g    @c   y    ,    .         _    _
+;;   _    _    _              _                   @ra  _    _    _    _
+;; )
+
+;; sowa graphite
 (deflayer sowa
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  @tab q    w    h    d    v    /    j    o    u    z    _    _    _
-  @cap x    r    @n   @t   l    '    p    a    e    i    ;         _
-  _    k    b    m    @s   f    g    @c   y    ,    .         _    _
+  @tab q    b    l    d    w    '    k    o    u    j    _    _    _
+  @cap x    n    @r   @t   c    /    h    a    e    i    ;         _
+  _    z    v    m    @s   g    f    @p   y    ,    .         _    _
   _    _    _              _                   @ra  _    _    _    _
 )
 
@@ -63,10 +72,10 @@
   ;; tap for esc, hold for ctrl layer
   cap (tap-hold 200 200 esc (layer-while-held vanilla_ctrl))
 
-  ;; tap: n, hold: toggle to layer
-  n (tap-hold 200 200 n (layer-while-held mods))
+  ;; tap: letter, hold: toggle to layer
+  r (tap-hold 200 200 r (layer-while-held mods))
   s (tap-hold 200 200 s (layer-while-held syslayer))
-  c (tap-hold 200 200 c (layer-while-held cc))
+  p (tap-hold 200 200 p (layer-while-held cc))
   t (tap-hold 200 200 t (layer-while-held typing))
 
   1c (one-shot-press 2000 lctl)

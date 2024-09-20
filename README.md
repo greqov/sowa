@@ -2,31 +2,44 @@
 
 _Custom keyboard layout. Powered by [kanata](https://github.com/jtroo/kanata) keyboard remapper._
 
+This project contains:
+
+- custom keyboard layout SOWA for English;
+- custom keyboard layout SOWARU for Russian;
+- (still WIP) set of additional layers for using keyboard more efficiently.
+
+## Why?
+
+All modern alt layouts assume placing your fingers on "home" row, i.e. on `ASDF` and `KJL;` keys. I personally find this position uncomfortable. For me it's much more convenient to place index fingers on the bottom row, i.e. on `SDFV` and `NJKL` keys. And because of that reason all those layouts loose a lot of their eFfiCieNcY. That's why I decided to create a new layout for my "special needs". It's not super efficient in many metrics but who cares. After 3 attempts of redesigning and 1.5 years of practice I ended up with (mostly) adapting [graphite layout](https://github.com/rdavison/graphite-layout). Result SOWA layout has some flaws (see below) but I'm pretty happy with it.
+
+The same story goes for Cyrillic layout. Because why not? +1% efficiency? I will take that!
+ЙЦУКЕН layout for Russian is not as bad as QWERTY for English but anyways. There are few alt layouts for Russian and kharlamak has the best metrics. I've tried to adapt it.
+
+## Features
+
+- 2 layouts: SOWA layout and fallback QWERTY;
+- complimentary ЙЦУКЕН layout (r1);
+- complimentary SOWARU layout (r2);
+- custom layers: shortcuts, punctuation, etc;
+- small QoL features like capitalize a word or sticky keys.
+
 ## Quick start
 
-See [kanata Linux setup](https://github.com/jtroo/kanata/blob/main/docs/setup-linux.md) docs.
+The easiest way to try/use alternative keyboard layout is using some remapping software. I picked kanata.
 
-There are 2 config files: `sowa.kbd` for TKL-87 keyboard (a bit outdated), `sowa-60.kbd` for 60% keyboard.
+For Linux setup see [kanata Linux docs](https://github.com/jtroo/kanata/blob/main/docs/setup-linux.md).
 
 ```bash
 kanata --cfg sowa-60.kbd
 ```
 
-## Features
+For Windows setup see section below.
 
-- 2 layouts: default QWERTY, custom SOWA layout;
-- complimentary ЙЦУКЕН layout;
-- custom layers: shortcuts, punctuation, etc;
-- small QoL features like capitalize a word or sticky keys.
+Note: `sowa-60.kbd` config file is for 60% keyboards.
 
 ## Usage tips
 
-Use `~` (or `ralt`) to switch layers:
-
-- `~ + q` switch to QWERTY, `~ + 1` switch to SOWA
-- `~ + 2` live reload kanata config
-
-Use `tab` for 60% keyboard:
+Use `tab`:
 
 - `tab + r` live reload kanata config
 - `tab + q` switch to QWERTY layout
@@ -73,9 +86,16 @@ Paste these lines (with proper name `r1` or `r2`) somewhere near Russian layouts
 
 To install `SOWA`, `SOWARU` layouts on Windows look into _/windows_ folder:
 
-- _/windows/kanata_ folder contains kanata files; just copy this folder (to `C:\bin\kanata\` for example), copy latest `sowa-60.kbd` config file inside, launch with `kanata-launcher.bat`. All those files here in for quick setup only. You can do this manually, no need to download suspicious `*.exe` files from Internet.
+- _/windows/kanata_ folder contains kanata files; just copy this folder (to `C:\bin\kanata\` for example), copy the latest `sowa-60.kbd` config file inside, launch with `kanata-launcher.bat`. All those files here in for quick setup only. You can do this manually, no need to download suspicious `*.exe` files from Internet.
 
 - _/windows/sowaru_ folder contains files for installing Cyrillic `SOWARU` layout; those files were generated from `sowaru.klc` keyboard file in [Microsoft Keyboard Layout Creator (MSKLC)](https://www.microsoft.com/en-us/download/details.aspx?id=102134). I believe you only need amd64 files here but I saved them all just in case. Run `setup.exe` to install `SOWARU` layout. Go to System settings -> Language settings -> Prefered languages -> Russian -> Options -> Add a keyboard -> SOWARU. Reboot. Please reboot. You may also want to setup hotkeys to switch between `ЙЦУКЕН` and `SOWARU` layouts (in case of using 2 cyrillic layouts).
+
+## Some "flaws" and annoyances
+
+SOWA layout is not ideal and it has worse metrics because some fingers have access to few keys while others fingers "overloaded".
+
+- it's quite hard to press `k` key (kick, king, like);
+- I'm not fan of `br`, `rb`, `mb`, `bm`, `wn` bigrams (brown, down, backwards);
 
 ## Other files
 
@@ -97,3 +117,4 @@ To install `SOWA`, `SOWARU` layouts on Windows look into _/windows_ folder:
 - [ ] split showcase image into separate ones for updating them more easily in the future;
 - [ ] add `ЙЦУКЕН` files for Windows probably;
 - [ ] make README more beginner friendly;
+- [ ] create sane layer for punctuation, numbers, etc.

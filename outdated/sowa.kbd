@@ -1,3 +1,9 @@
+;;
+;; This is an old outdated kanata config file for TKL-87 keyboard
+;; I switched to 60% keyboard so yeah
+;; I hope it will be updated someday for actual SOWA version
+;;
+
 ;; Not sure about this option
 ;; See docs: https://github.com/jtroo/kanata/blob/main/docs/config.adoc#process-unmapped-keys
 (defcfg

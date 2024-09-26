@@ -1,3 +1,5 @@
+![SOWA layout](./images/sowa.png)
+
 # SOWA
 
 _Custom keyboard layout. Powered by [kanata](https://github.com/jtroo/kanata) keyboard remapper._
@@ -17,6 +19,8 @@ The same story goes for Cyrillic layout. Because why not? +1% efficiency? I will
 
 ## Layouts
 
+![sowa homerow](./images/sowa_homerow.png)
+
 ```
 SOWA
 
@@ -24,6 +28,11 @@ qbldw ' kouj[]
 xnrtc / haei;
 zvmsg   fpy,.
 
+```
+
+![cyrillic sowaru layout](./images/sowaru.png)
+
+```
 SOWARU
 
 .эыйщ х цргчшъ
@@ -98,7 +107,7 @@ To install `SOWA`, `SOWARU` layouts on Windows look into _/windows_ folder:
 
 - _/windows/sowaru_ folder contains files for installing Cyrillic `SOWARU` layout; those files were generated from `sowaru.klc` keyboard file in [Microsoft Keyboard Layout Creator (MSKLC)](https://www.microsoft.com/en-us/download/details.aspx?id=102134). I believe you only need amd64 files here but I saved them all just in case. Run `setup.exe` to install `SOWARU` layout. Go to System settings -> Language settings -> Prefered languages -> Russian -> Options -> Add a keyboard -> SOWARU. Reboot. Please reboot. You may also want to setup hotkeys to switch between `ЙЦУКЕН` and `SOWARU` layouts (in case of using 2 cyrillic layouts).
 
-*NOTE!* It seems like kanata doesn't work with programms with admin rights, so be aware.
+_NOTE!_ It seems like kanata doesn't work with programms with admin rights, so be aware.
 
 ## Some "flaws" and annoyances
 

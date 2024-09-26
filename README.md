@@ -10,18 +10,26 @@ This project contains:
 
 ## Why?
 
-All modern alt layouts assume placing your fingers on "home" row, i.e. on `ASDF` and `KJL;` keys. I personally find this position uncomfortable. For me it's much more convenient to place index fingers on the bottom row, i.e. on `SDFV` and `NJKL` keys. And because of that reason all those layouts loose a lot of their eFfiCieNcY. That's why I decided to create a new layout for my "special needs". It's not super efficient in many metrics but who cares. After 3 attempts of redesigning and 1.5 years of practice I ended up with (mostly) adapting [graphite layout](https://github.com/rdavison/graphite-layout). Result SOWA layout has some flaws (see below) but I'm pretty happy with it.
+All modern alt layouts assume placing your fingers on "home" row, i.e. on `ASDF` and `KJL;` keys. I personally find this position uncomfortable. For me it's much more convenient to place index fingers on the bottom row, i.e. on `SDFV` and `NJKL` keys. And because of that reason all those layouts loose a lot of their eFfiCieNcY. That's why I decided to create a new layout for my "special needs". It's not super efficient in many metrics but who cares. After 3 attempts of redesigning and 1.5 years of practice I ended up with (mostly) adapting [graphite layout](https://github.com/rdavison/graphite-layout). Result SOWA layout has some flaws (see below) but I'm pretty happy with it. It places hands slightly wider. The right hand shifted 1 column to the right (so maybe swap `j` and `k` keys on yous keyboard).
 
 The same story goes for Cyrillic layout. Because why not? +1% efficiency? I will take that!
 ЙЦУКЕН layout for Russian is not as bad as QWERTY for English but anyways. There are few alt layouts for Russian and kharlamak has the best metrics. I've tried to adapt it.
 
-## Features
+## Layouts
 
-- 2 layouts: SOWA layout and fallback QWERTY;
-- complimentary ЙЦУКЕН layout (r1);
-- complimentary SOWARU layout (r2);
-- custom layers: shortcuts, punctuation, etc;
-- small QoL features like capitalize a word or sticky keys.
+```
+SOWA
+
+qbldw ' kouj[]
+xnrtc / haei;
+zvmsg   fpy,.
+
+SOWARU
+
+.эыйщ х цргчшъ
+зиоак ф пнсвж
+юуьея   дтлмб
+```
 
 ## Quick start
 
@@ -47,7 +55,7 @@ Use `tab`:
 
 ## Adding/restoring ЙЦУКЕН/cyrillic layout
 
-Any custom layout reshuffles keys for other languages. To be able to use (almost!) default Russian ЙЦУКЕН layout you have to do the following:
+Any custom layout reshuffles keys for other languages. To be able to use (almost!) default Russian ЙЦУКЕН layout you have to do the following (for Linux):
 
 1. Add new symbols (`r1` or `r2`) to system:
 
@@ -90,12 +98,14 @@ To install `SOWA`, `SOWARU` layouts on Windows look into _/windows_ folder:
 
 - _/windows/sowaru_ folder contains files for installing Cyrillic `SOWARU` layout; those files were generated from `sowaru.klc` keyboard file in [Microsoft Keyboard Layout Creator (MSKLC)](https://www.microsoft.com/en-us/download/details.aspx?id=102134). I believe you only need amd64 files here but I saved them all just in case. Run `setup.exe` to install `SOWARU` layout. Go to System settings -> Language settings -> Prefered languages -> Russian -> Options -> Add a keyboard -> SOWARU. Reboot. Please reboot. You may also want to setup hotkeys to switch between `ЙЦУКЕН` and `SOWARU` layouts (in case of using 2 cyrillic layouts).
 
+*NOTE!* It seems like kanata doesn't work with programms with admin rights, so be aware.
+
 ## Some "flaws" and annoyances
 
 SOWA layout is not ideal and it has worse metrics because some fingers have access to few keys while others fingers "overloaded".
 
-- it's quite hard to press `k` key (kick, king, like);
-- I'm not fan of `br`, `rb`, `mb`, `bm`, `wn` bigrams (brown, down, backwards);
+- it's quite hard to press `k` key (kick, king, like, backwards);
+- I'm not fan of `br`, `rb`, `mb`, `bm`, `wn` bigrams (brown, down, downtown, umbrella);
 
 ## Other files
 
@@ -107,14 +117,7 @@ SOWA layout is not ideal and it has worse metrics because some fingers have acce
 
 ## TODO
 
-- [x] pick proper name for custom layout;
 - [ ] add fancy images with layout and heatmaps;
-- [ ] switch K and J keys;
-- [ ] add philosophy, pros/cons section;
-- [x] how to add (restore) RU layout;
-- [ ] describe differences to RU layout coz it's wider too;
-- [ ] add `r2` layout description;
-- [ ] split showcase image into separate ones for updating them more easily in the future;
 - [ ] add `ЙЦУКЕН` files for Windows probably;
 - [ ] make README more beginner friendly;
 - [ ] create sane layer for punctuation, numbers, etc.

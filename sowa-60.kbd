@@ -6,6 +6,13 @@
 (defcfg
   process-unmapped-keys yes
   concurrent-tap-hold yes
+
+  ;; apply config to 60% kb only
+  linux-dev-names-include (
+    "ZXWMicroChip ZXW-KEYBOARD"
+    "ZXWMicroChip ZXW-KEYBOARD Mouse"
+    "ZXWMicroChip ZXW-KEYBOARD Keyboard"
+  )
 )
 
 ;; Only one defsrc is allowed.

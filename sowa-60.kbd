@@ -48,16 +48,8 @@
   @tab q    w    e    r    t    y    u    i    o    p    [    ]    \
   @cap a    s    d    f    g    h    j    k    l    ;    '         ret
   lsft z    x    c    v    b    n    m    ,    .    /         up   rsft
-  lctl lmet lalt           spc                 ralt left down rght cmp
+  lctl lmet lalt           spc                 ralt left down rght menu
 )
-
-;; (deflayer sowa
-;;   _    _    _    _    _    _    _    _    _    _    _    _    _    _
-;;   @tab q    w    h    d    v    /    j    o    u    z    _    _    _
-;;   @cap x    r    @n   @t   l    '    p    a    e    i    ;         _
-;;   _    k    b    m    @s   f    g    @c   y    ,    .         _    _
-;;   _    _    _              _                   @ra  _    _    _    _
-;; )
 
 ;; sowa graphite
 (deflayer sowa

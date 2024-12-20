@@ -60,10 +60,51 @@
   _    _    _              _                   @ra  _    _    _    _
 )
 
+;; sowaru
+;; complimentary layer to work with default Cyrillic layout ЙЦУКЕН
+(deflayer sowaru
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  @tab /    '    s    q    o    ]    w    h    u    x    i    [   _
+  _    p    b    @j1  @fo  @r1  a    @g1  @y1  @c1  d    ;         _
+  _    .    e    m    t    z    l    n    k    v    ,         _    _
+  @c2  _    @a2            _                   _    _    _    _    _
+)
+
+;; a copy of sowa layer for shortcuts on sowaru layer
+(deflayer sowa_letters
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  @tab q    b    l    d    w    '    k    o    u    j    _    _    _
+  @cap x    n    @r3  @t3  @c3  /    @h3  @a3  @e3  i    ;         _
+  _    z    v    m    s    g    f    p    y    ,    .         _    _
+  _    _    _              _                   _    _    _    _    _
+)
+
 (defalias
   ;; layer-switch changes the base layer
   sw (layer-switch sowa)
+  swr (layer-switch sowaru)
   qwr (layer-switch qwerty)
+
+  ;; on hold switch to sowa layer for English letters for shortcuts
+  r1 (tap-hold 200 200 r (multi lctl (layer-while-held sowa_letters)))
+  g1 (tap-hold 200 200 g (multi rctl (layer-while-held sowa_letters)))
+  j1 (tap-hold 200 200 j (multi lalt (layer-while-held sowa_letters)))
+  c1 (tap-hold 200 200 c (multi ralt (layer-while-held sowa_letters)))
+  ;; stay on sowaru layer for capital Cyrillic letters
+  fo (tap-hold 200 200 f lsft)
+  y1 (tap-hold 200 200 y rsft)
+
+  ;; switch to sowa layers just in case, maybe remove it
+  a2 (multi lalt (layer-while-held sowa_letters))
+  c2 (multi lctl (layer-while-held sowa_letters))
+
+  ;; home row mods for shortcuts
+  c3 (tap-hold 200 200 c lctl)
+  h3 (tap-hold 200 200 h rctl)
+  t3 (tap-hold 200 200 t lsft)
+  a3 (tap-hold 200 200 a rsft)
+  r3 (tap-hold 200 200 r lalt)
+  e3 (tap-hold 200 200 e ralt)
 
   ;; tap: tab, hold: switch to layer
   tab (tap-hold 200 200 tab (layer-while-held layers))
@@ -101,7 +142,7 @@
 
 (deflayer layers
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    @qwr @sw  _    lrld _    _    _    _    _    _    _    _    _
+  _    @qwr @sw  @swr lrld _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _         _
   _    _    _    _    _    _    _    _    _    _    _         _    _
   _    _    _              _                   _    _    _    _    _

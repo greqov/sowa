@@ -1,0 +1,116 @@
+;; kanata config for split 42-keys corne keyboard
+
+;; Not sure about this option
+;; See docs: https://github.com/jtroo/kanata/blob/main/docs/config.adoc#process-unmapped-keys
+
+(defcfg
+  process-unmapped-keys yes
+  concurrent-tap-hold yes
+
+  ;; apply config to corne kb only
+  linux-dev-names-include (
+    "Weekin Weekin Corne_W"
+    "Weekin Weekin Corne_W Mouse"
+    "Weekin Weekin Corne_W Keyboard"
+    "Weekin Weekin Corne_W Consumer Control"
+  )
+)
+
+;; Only one defsrc is allowed.
+;;
+;; defsrc defines the keys that will be intercepted by kanata. The order of the
+;; keys matches with deflayer declarations and all deflayer declarations must
+;; have the same number of keys as defsrc. Any keys not listed in defsrc will
+;; be passed straight to the operating system.
+
+(defsrc
+  tab  q    w    e    r    t         y    u    i    o    p    \
+  caps a    s    d    f    g         h    j    k    l    ;    ret
+  lsft z    x    c    v    b         n    m    ,    .    /    rsft
+                 lctl lmet lalt      ralt spc  rctl
+)
+
+#|
+(deflayer 42keys
+  _    _    _    _    _    _         _    _    _    _    _    _
+  _    _    _    _    _    _         _    _    _    _    _    _
+  _    _    _    _    _    _         _    _    _    _    _    _
+                 _    _    _         _    _    _
+)
+|#
+
+;; The first layer defined is the layer that will be active by default when
+;; kanata starts up. This layer is the standard QWERTY layout.
+
+(deflayer qwerty
+  tab  q    w    e    r    t         y    u    i    o    p    \
+  caps a    s    d    f    g         h    j    k    l    ;    ret
+  lsft z    x    c    v    b         n    m    ,    .    /    rsft
+                 lctl lmet @lr       ralt spc  rctl
+)
+
+;; sowa
+(deflayer sowa
+  q    b    l    d    w    ]         '    k    o    u    j    [
+  x    n    r    t    c    _         /    h    a    e    i    ;
+  @RU  z    v    m    s    g         f    p    y    ,    .    _
+                 _    _    @lr       _    _    _
+)
+
+;; all alpha layers + live reload
+(deflayer layers
+  _    @qwr @sw  @swr lrld _         _    _    _    _    _    _
+  _    _    _    _    _    _         _    _    _    _    _    _
+  _    _    _    _    _    _         _    _    _    _    _    _
+                 _    _    _         _    _    _
+)
+
+;; sowaru
+;; a complimentary layer to work with default Cyrillic layout ЙЦУКЕН
+(deflayer sowaru
+  /    '    s    q    o    ]         [    w    h    u    x    i
+  p    b    @j1  @fo  @r1  _         a    @g1  @y1  @c1  d    ;
+  @EN  .    e    m    t    z         l    n    k    v    ,    _
+                 _    _    @lr       _    _    _
+)
+
+;; a copy of sowa layer for shortcuts on sowaru layer
+(deflayer sowa_letters
+  q    b    l    d    w    ]         '    k    o    u    j    [
+  x    n    @r3  @t3  @c3  _         /    @h3  @a3  @e3  i    ;
+  _    z    v    m    s    g         f    p    y    ,    .    _
+                 _    _    _         _    _    _
+)
+
+(defalias
+
+  ;; tap: 1, hold: switch to layer
+  lr (tap-hold 200 200 1 (layer-while-held layers))
+
+  ;; layer-switch changes the base layer
+  sw (layer-switch sowa)
+  swr (layer-switch sowaru)
+  qwr (layer-switch qwerty)
+
+  ;; switch system language with Shift+Alt
+  ;; todo: pick different hotkey to prevent accidentally switching
+  EN (multi lsft lalt (layer-switch sowa))
+  RU (multi lsft lalt (layer-switch sowaru))
+
+  ;; on hold switch to sowa layer for English letters for shortcuts
+  r1 (tap-hold 200 200 r (multi lctl (layer-while-held sowa_letters)))
+  g1 (tap-hold 200 200 g (multi rctl (layer-while-held sowa_letters)))
+  j1 (tap-hold 200 200 j (multi lalt (layer-while-held sowa_letters)))
+  c1 (tap-hold 200 200 c (multi ralt (layer-while-held sowa_letters)))
+  ;; stay on sowaru layer for capital Cyrillic letters
+  fo (tap-hold 200 200 f lsft)
+  y1 (tap-hold 200 200 y rsft)
+
+  ;; home row mods for shortcuts
+  c3 (tap-hold 200 200 c lctl)
+  h3 (tap-hold 200 200 h rctl)
+  t3 (tap-hold 200 200 t lsft)
+  a3 (tap-hold 200 200 a rsft)
+  r3 (tap-hold 200 200 r lalt)
+  e3 (tap-hold 200 200 e ralt)
+)

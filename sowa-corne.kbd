@@ -53,7 +53,7 @@
 (deflayer sowa
   q    b    l    d    w    ]         '    k    o    u    j    [
   x    n    @r0  @t0  @c0  _         /    @h0  @a0  @e0  i    ;
-  @RU  z    v    m    s    g         f    p    y    ,    .    _
+  @RU  z    v    m    @s0  g         f    p    y    ,    .    _
                  _    _    @lr       _    _    _
 )
 
@@ -70,7 +70,7 @@
 (deflayer sowaru
   /    '    s    q    o    ]         [    w    h    u    x    i
   p    b    @j1  @fo  @r1  _         a    @g1  @y1  @c1  d    ;
-  @EN  .    e    m    t    z         l    n    k    v    ,    _
+  @EN  .    e    m    @t1  z         l    n    k    v    ,    _
                  _    _    @lr       _    _    _
 )
 
@@ -113,4 +113,17 @@
   a0 (tap-hold 200 200 a rsft)
   r0 (tap-hold 200 200 r lalt)
   e0 (tap-hold 200 200 e ralt)
+
+  s0 (tap-hold 200 200 s (layer-while-held nav))
+  t1 (tap-hold 200 200 t (layer-while-held nav))
+
+  ;; delete a word
+  dw C-bspc
+)
+
+(deflayer nav
+  _    _    _    _    _    _         _    bspc @dw  esc  _    _
+  _    _    _    bspc _    _         _    lft  down up   rght _
+  _    lalt lsft lctl _    _         _    ret  tab  _    _    _
+                 _    _    _         _    _    _
 )

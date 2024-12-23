@@ -69,8 +69,8 @@
 ;; a complimentary layer to work with default Cyrillic layout ЙЦУКЕН
 (deflayer sowaru
   /    '    s    @q1  o    ]         [    w    h    u    x    i
-  p    b    @j1  @fo  @r1  `         a    @g1  @y1  @c1  d    ;
-  @EN  .    @e1  m    @t1  z         l    n    k    v    ,    _
+  .    b    @j1  @fo  @r1  `         a    @g1  @y1  @c1  d    ;
+  @EN  p    @e1  m    @t1  z         l    n    k    v    ,    _
                  _    _    @lr       _    _    _
 )
 

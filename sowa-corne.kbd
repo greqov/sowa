@@ -74,14 +74,6 @@
                  _    _    @lr       _    _    _
 )
 
-;; a copy of sowa layer for shortcuts on sowaru layer
-(deflayer sowa_letters
-  q    b    l    d    w    ]         '    k    o    u    j    [
-  x    n    @r0  @t0  @c0  _         /    @h0  @a0  @e0  i    ;
-  _    z    v    m    s    g         f    p    y    ,    .    _
-                 _    _    _         _    _    _
-)
-
 (defalias
 
   ;; tap: 1, hold: switch to layer
@@ -98,10 +90,10 @@
   RU (multi lsft lalt (layer-switch sowaru))
 
   ;; on hold switch to sowa layer for English letters for shortcuts
-  r1 (tap-hold 200 200 r (multi lctl (layer-while-held sowa_letters)))
-  g1 (tap-hold 200 200 g (multi rctl (layer-while-held sowa_letters)))
-  j1 (tap-hold 200 200 j (multi lalt (layer-while-held sowa_letters)))
-  c1 (tap-hold 200 200 c (multi ralt (layer-while-held sowa_letters)))
+  r1 (tap-hold 200 200 r (multi lctl (layer-while-held sowa)))
+  g1 (tap-hold 200 200 g (multi rctl (layer-while-held sowa)))
+  j1 (tap-hold 200 200 j (multi lalt (layer-while-held sowa)))
+  c1 (tap-hold 200 200 c (multi ralt (layer-while-held sowa)))
   ;; stay on sowaru layer for capital Cyrillic letters
   fo (tap-hold 200 200 f lsft)
   y1 (tap-hold 200 200 y rsft)

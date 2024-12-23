@@ -115,13 +115,13 @@
   d0 (tap-hold 200 200 d (layer-while-held numbers))
   q1 (tap-hold 200 200 q (layer-while-held numbers))
 
-  ;; delete a word
-  dw C-bspc
+  dw C-bspc ;; delete a word
+  cw (caps-word 2000) ;; caps word
 )
 
 (deflayer nav
   _    _    _    _    _    _         _    bspc @dw  esc  _    _
-  _    _    _    bspc _    _         _    lft  down up   rght _
+  _    @cw  _    bspc _    _         home lft  down up   rght end
   _    lalt lsft lctl _    _         _    ret  tab  del  _    _
                  _    _    _         _    _    _
 )

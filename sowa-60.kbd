@@ -56,7 +56,7 @@
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   tab  q    b    l    d    w    '    k    o    u    j    _    _    _
   @RU  x    n    @r0  @t0  @c0  /    @h0  @a0  @e0  i    ;         _
-  _    z    v    m    @s   g    f    p    y    ,    .         _    _
+  _    z    @v0  m    @s0  g    f    p    y    ,    .         _    _
   _    _    _              _                   @ra  _    _    _    _
 )
 
@@ -66,7 +66,7 @@
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   tab  /    '    s    q    o    ]    w    h    u    x    i    [    _
   @EN  .    b    @j1  @fo  @r1  a    @g1  @y1  @c1  d    ;         _
-  _    p    e    m    t    z    l    n    k    v    ,         _    _
+  _    p    @e1  m    @t1  z    l    n    k    v    ,         _    _
   _    _    _              _                   @ra  _    _    _    _
 )
 
@@ -102,7 +102,11 @@
   cap esc
 
   ;; tap: letter, hold: toggle to layer
-  s (tap-hold 200 200 s (layer-while-held nav))
+  s0 (tap-hold 200 200 s (layer-while-held nav))
+  t1 (tap-hold 200 200 t (layer-while-held nav))
+
+  v0 (tap-hold 200 200 v (layer-while-held left_hand))
+  e1 (tap-hold 200 200 e (layer-while-held left_hand))
 
   dw C-bspc ;; delete a word
   cw (caps-word 2000) ;; caps word
@@ -126,8 +130,16 @@
 (deflayer nav
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    bspc @dw  esc  _    _    _    _
-  _    @cw  _    bspc _    _    home lft  down up   rght end       _
+  _    _    @cw  _    bspc _    home lft  down up   rght end       _
   _    lalt lsft lctl _    _    _    ret  tab  _    _         _    _
+  _    _    _              _                   _    _    _    _    _
+)
+
+(deflayer left_hand
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _         _
+  _    _    _    C-c  C-v  _    _    _    _    _    _         _    _
   _    _    _              _                   _    _    _    _    _
 )
 

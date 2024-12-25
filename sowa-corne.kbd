@@ -59,7 +59,7 @@
 
 ;; all alpha layers + live reload
 (deflayer layers
-  _    @qwr @sw  @swr lrld _         _    _    _    _    _    _
+  _    @qwr @sw  @swr lrld @pr       _    _    _    _    _    _
   _    _    _    _    _    _         _    _    _    _    _    _
   _    _    _    _    _    _         _    _    _    _    _    _
                  _    _    _         _    _    _
@@ -74,6 +74,13 @@
                  _    _    @lr       _    _    _
 )
 
+(deflayer promethium
+  _    v    w    @g2  m    j         _    _    _    _    _    z
+  _    s    @n2  @t2  @h2  k         _    @a2  @e2  @i2  c    q
+  _    f    @p2  d    @l2  x         _    u    o    y    b    _
+                 _    r    @lr       _    _    _
+)
+
 (defalias
 
   ;; tap: 1, hold: switch to layer
@@ -83,6 +90,7 @@
   sw (layer-switch sowa)
   swr (layer-switch sowaru)
   qwr (layer-switch qwerty)
+  pr (layer-switch promethium)
 
   ;; switch system language with Shift+Alt
   ;; todo: pick different hotkey to prevent accidentally switching
@@ -106,14 +114,25 @@
   r0 (tap-hold 200 200 r lalt)
   e0 (tap-hold 200 200 e ralt)
 
+  ;; home row mods promethium
+  h2 (tap-hold 200 200 h lctl)
+  a2 (tap-hold 200 200 a rctl)
+  t2 (tap-hold 200 200 t lsft)
+  e2 (tap-hold 200 200 e rsft)
+  n2 (tap-hold 200 200 n lalt)
+  i2 (tap-hold 200 200 i ralt)
+
   s0 (tap-hold 200 200 s (layer-while-held nav))
   t1 (tap-hold 200 200 t (layer-while-held nav))
+  l2 (tap-hold 200 200 l (layer-while-held nav))
 
   v0 (tap-hold 200 200 v (layer-while-held left_hand))
   e1 (tap-hold 200 200 e (layer-while-held left_hand))
+  p2 (tap-hold 200 200 p (layer-while-held left_hand))
 
   d0 (tap-hold 200 200 d (layer-while-held numbers))
   q1 (tap-hold 200 200 q (layer-while-held numbers))
+  g2 (tap-hold 200 200 g (layer-while-held numbers))
 
   dw C-bspc ;; delete a word
   cw (caps-word 2000) ;; caps word

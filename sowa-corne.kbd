@@ -75,10 +75,18 @@
 )
 
 (deflayer promethium
-  _    v    w    @g2  m    j         _    _    _    _    _    z
-  _    s    @n2  @t2  @h2  k         _    @a2  @e2  @i2  c    q
-  _    f    @p2  d    @l2  x         _    u    o    y    b    _
+  _    v    w    @g2  m    j         '    '    .    ,    '    z
+  q    s    @n2  @t2  @h2  k         /    @a2  @e2  @i2  c    ;
+  @RUp f    @p2  d    @l2  x         -    u    o    y    b    _
                  _    r    @lr       _    _    _
+)
+
+;; sowaru-promethium compatible layer
+(deflayer sowaru_pm
+  /    '    s    @q1  o    ]         [    w    h    u    x    i
+  .    b    @j3  @fo  @r3  `         a    @g3  @y1  @c3  d    ;
+  @ENp p    @e1  m    @t1  z         l    n    k    v    ,    _
+                 _    _    @lr       _    _    _
 )
 
 (defalias
@@ -97,11 +105,22 @@
   EN (multi lsft lalt (layer-switch sowa))
   RU (multi lsft lalt (layer-switch sowaru))
 
+  ;; switching between promethium and sowaru
+  ENp (multi lsft lalt (layer-switch promethium))
+  RUp (multi lsft lalt (layer-switch sowaru_pm))
+
   ;; on hold switch to sowa layer for English letters for shortcuts
   r1 (tap-hold 200 200 r (multi lctl (layer-while-held sowa)))
   g1 (tap-hold 200 200 g (multi rctl (layer-while-held sowa)))
   j1 (tap-hold 200 200 j (multi lalt (layer-while-held sowa)))
   c1 (tap-hold 200 200 c (multi ralt (layer-while-held sowa)))
+
+  ;; sowaru-promethium
+  r3 (tap-hold 200 200 r (multi lctl (layer-while-held promethium)))
+  g3 (tap-hold 200 200 g (multi rctl (layer-while-held promethium)))
+  j3 (tap-hold 200 200 j (multi lalt (layer-while-held promethium)))
+  c3 (tap-hold 200 200 c (multi ralt (layer-while-held promethium)))
+
   ;; stay on sowaru layer for capital Cyrillic letters
   fo (tap-hold 200 200 f lsft)
   y1 (tap-hold 200 200 y rsft)

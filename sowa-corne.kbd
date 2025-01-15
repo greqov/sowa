@@ -27,7 +27,7 @@
   tab  q    w    e    r    t         y    u    i    o    p    \
   caps a    s    d    f    g         h    j    k    l    ;    ret
   lsft z    x    c    v    b         n    m    ,    .    /    rsft
-                 lctl lmet lalt      ralt spc  rctl
+                 lctl menu lalt      ralt spc  rctl
 )
 
 #|
@@ -46,7 +46,7 @@
   tab  q    w    e    r    t         y    u    i    o    p    \
   caps a    s    d    f    g         h    j    k    l    ;    ret
   lsft z    x    c    v    b         n    m    ,    .    /    rsft
-                 lctl lmet @lr       ralt spc  rctl
+                 lctl menu @lr       ralt spc  rctl
 )
 
 ;; sowa

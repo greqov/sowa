@@ -83,8 +83,8 @@
 
 ;; sowaru-promethium compatible layer
 (deflayer sowaru_pm
-  /    '    s    @q1  o    ]         [    w    h    u    x    i
-  .    b    @j3  @fo  @r3  `         a    @g3  @y1  @c3  d    ;
+  /    '    s    @q1  o    ]         `    w    h    u    x    i
+  .    b    @j3  @fo  @r3  [         a    @g3  @y1  @c3  d    ;
   @ENp p    @e1  m    @t1  z         l    n    k    v    ,    _
                  _    _    @lr       _    _    _
 )

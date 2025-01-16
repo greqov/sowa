@@ -75,9 +75,9 @@
 )
 
 (deflayer promethium
-  _    v    w    @g2  m    j         '    '    .    ,    '    z
+  _    v    w    @g2  m    -         '    '    .    ,    '    z
   q    s    @n2  @t2  @h2  k         /    @a2  @e2  @i2  c    ;
-  @RUp f    @p2  d    @l2  x         -    u    o    y    b    _
+  @RUp f    @p2  d    @l2  x         j    u    o    y    b    _
                  _    r    @lr       _    _    _
 )
 

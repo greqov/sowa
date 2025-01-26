@@ -78,7 +78,7 @@
   `    v    w    @g2  m    -         '    '    .    ,    '    z
   q    s    @n2  @t2  @h2  k         /    @a2  @e2  @i2  c    ;
   @RUp f    @p2  d    @l2  x         j    u    o    y    b    _
-                 _    r    @lr       _    _    _
+                 _    r    @lr       @S1  _    _
 )
 
 ;; sowaru-promethium compatible layer
@@ -86,13 +86,14 @@
   /    '    s    @q1  o    ]         `    w    h    u    x    i
   .    b    @j3  @fo  @r3  [         a    @g3  @y1  @c3  d    ;
   @ENp l    @e1  m    @t1  z         p    n    k    v    ,    _
-                 _    _    @lr       _    _    _
+                 _    _    @lr       @S1  _    _
 )
 
 (defalias
 
   ;; tap: 1, hold: switch to layer
-  lr (tap-hold 200 200 1 (layer-while-held layers))
+  S1 (one-shot-press 2000 lsft)
+  lr (tap-hold 200 200 @S1 (layer-while-held layers))
 
   ;; layer-switch changes the base layer
   sw (layer-switch sowa)

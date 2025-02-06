@@ -158,13 +158,14 @@
   dw C-bspc ;; delete a word
   cw (caps-word 2000) ;; caps word
   rdo C-S-z ;; redo
+  atb A-tab ;; alt-tab (prev window only)
 )
 
 (deflayer nav
   esc  _    _    @dw  _    _         _    _    up   esc  _    _
   _    _    lalt lsft lctl _         _    lft  down rght _    _
-  _    _    _    bspc _    ret       _    ret  tab  del  _    _
-                 _    _    _         _    _    _
+  _    _    _    bspc tab  ret       _    ret  tab  del  _    _
+                 @atb _    _         _    _    _
 )
 
 (deflayer legacy

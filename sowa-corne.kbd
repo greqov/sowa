@@ -24,8 +24,8 @@
 ;; be passed straight to the operating system.
 
 (defsrc
-  tab  q    w    e    r    t         y    u    i    o    p    \
-  caps a    s    d    f    g         h    j    k    l    ;    ret
+  esc  q    w    e    r    t         y    u    i    o    p    \
+  tab  a    s    d    f    g         h    j    k    l    ;    ret
   lsft z    x    c    v    b         n    m    ,    .    /    rsft
                  lctl menu lalt      ralt spc  rctl
 )
@@ -43,8 +43,8 @@
 ;; kanata starts up. This layer is the standard QWERTY layout.
 
 (deflayer qwerty
-  tab  q    w    e    r    t         y    u    i    o    p    \
-  caps a    s    d    f    g         h    j    k    l    ;    ret
+  esc  q    w    e    r    t         y    u    i    o    p    \
+  tab  a    s    d    f    g         h    j    k    l    ;    ret
   lsft z    x    c    v    b         n    m    ,    .    /    rsft
                  lctl menu @lr       ralt spc  rctl
 )

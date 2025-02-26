@@ -1,3 +1,71 @@
+## Update!!!
+
+After buying a split keyboard I've decided to try a layout with thumb letter. For English I _strongly_ recommend **Hands Down Promethium** (bottom heavy variant):
+```
+  v w g m [      ] \ . , ' z
+q s n t h k      / a e i c ;
+  f p d l x      j u o y b
+        r
+```
+Note: place rare keys (`q`, `j`, `z`) wherever you'd like.
+
+For Russian I use another custom layout with somewhat decent stats (I guess).
+```
+. у ы й г ю        ц к л ш щ
+э и о а м х      ф д н р т ъ
+  ё я ь с ж      б в п ч з
+        е
+```
+Note: place rare keys (`э`, `щ`, `ъ`) wherever you'd like.
+
+oxey's stats:
+```
+Finger usage:
+finger 0: 	9.87% 	finger 9: 	8.42%
+finger 1: 	14.10% 	finger 8: 	10.29%
+finger 2: 	10.44% 	finger 7: 	12.56%
+finger 3: 	12.30% 	finger 6: 	9.75%
+
+Left hand: 46.70%     Right hand: 41.02%
+Left center: 2.352%   Right center: 1.891%
+Home keys usage: 49.38%
+
+Sfb% per finger:
+finger 0: 	0.010% 	finger 9: 	0.023%
+finger 1: 	0.095% 	finger 8: 	0.049%
+finger 2: 	0.117% 	finger 7: 	0.170%
+finger 3: 	0.212% 	finger 6: 	0.135%
+
+Sfb:  0.811%
+Dsfb: 5.841%
+Lsb:  0.744%
+
+Inrolls: 23.033%
+Outrolls: 16.194%
+Total Rolls: 39.227%
+Onehands: 1.503%
+
+Alternates: 35.052%
+Alternates (sfs): 8.106%
+Total Alternates: 43.158%
+
+Redirects: 5.279%
+BadRedirects: 0.149%
+Total Redirects: 5.428%
+
+Other: 4.444%
+Invalid: 6.240%
+
+```
+Note: btw you can get a little bit better stats without thumb key (less sfb, more lsb):
+```
+. у ы Е г ю      Ц Ч к л ш щ
+э и о а м х      ф д н р т ъ
+  ё я ь с ж      б в п Й з
+```
+
+---
+
 ![SOWA layout](./images/sowa.png)
 
 # SOWA

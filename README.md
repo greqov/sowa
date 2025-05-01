@@ -7,16 +7,16 @@ q s n t h k      / a e i c ;
   f p d l x      j u o y b
         r
 ```
-Note: place rare keys (`q`, `j`, `z`) wherever you'd like.
+Note: place rare keys (`q`, `j`, `z`) wherever you'd like. I also use combo `u + y` for `qu`, it's quite helpful.
 
 For Russian I use another custom layout with somewhat decent stats (I guess).
 ```
-. у ы й г ю        ц к л ш щ
+. ё ы й г ю        ц к л ш щ
 э и о а м х      ф д н р т ъ
-  ё я ь с ж      б в п ч з
+  у я ь с ж      б в п ч з
         е
 ```
-Note: place rare keys (`э`, `щ`, `ъ`) wherever you'd like.
+Note: place rare keys (`э`, `щ`, `ъ`) wherever you'd like. I also use few combos: `в + ч` for `ться`, `в + п` for `г`. This layout feels not so flowy as Promethium, I hope combos can help with some difficult words, just need to find the right ones.
 
 oxey's stats:
 ```
@@ -57,7 +57,10 @@ Other: 4.444%
 Invalid: 6.240%
 
 ```
-Note: btw you can get a little bit better stats without thumb key (less sfb, more lsb):
+
+![MonkeyType results on Russian 1k words 10 test after few months of not intense practice](./images/ru-progress.png)
+
+Note: btw you can get a little bit better stats without thumb key (less sfb, more lsb), didn't practice it:
 ```
 . у ы Е г ю      Ц Ч к л ш щ
 э и о а м х      ф д н р т ъ

@@ -9,14 +9,16 @@ q s n t h k      / a e i c ;
 ```
 Note: place rare keys (`q`, `j`, `z`) wherever you'd like. I also use combo `u + y` for `qu`, it's quite helpful.
 
-For Russian I use another custom layout with somewhat decent stats (I guess).
+For Russian I use another custom layout with somewhat decent stats (I guess):
 ```
 . ё ы й г ю        ц к л ш щ
 э и о а м х      ф д н р т ъ
   у я ь с ж      б в п ч з
         е
 ```
-Note: place rare keys (`э`, `щ`, `ъ`) wherever you'd like. I also use few combos: `в + ч` for `ться`, `в + п` for `г`. This layout feels not so flowy as Promethium, I hope combos can help with some difficult words, just need to find the right ones.
+Note: place rare keys (`э`, `щ`, `ъ`) wherever you'd like. I also use a combo `в + ч` for `ться`.
+
+After few months of practice I can say this layout feels good. I have only one minor complain about `г` key (I press it with middle finger btw). It will be nice to have that key on the right side. I've tried a combo `в + п` but result was meh.
 
 oxey's stats:
 ```
@@ -58,14 +60,16 @@ Invalid: 6.240%
 
 ```
 
-![MonkeyType results on Russian 1k words 10 test after few months of not intense practice](./images/ru-progress.png)
-
 Note: btw you can get a little bit better stats without thumb key (less sfb, more lsb), didn't practice it:
 ```
 . у ы Е г ю      Ц Ч к л ш щ
 э и о а м х      ф д н р т ъ
   ё я ь с ж      б в п Й з
 ```
+
+![MonkeyType results on Russian 1k words 10 test after few months of not intense practice](./images/ru-progress.png)
+
+My current PBs on short MonkeyType tests (10 words, 1k set) are: for English is 92wpm, for Russian is 85wpm. So in terms of speed this RU layout is the same as Promethium and "save" to use.
 
 ---
 

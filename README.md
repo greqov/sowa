@@ -11,8 +11,8 @@ Note: place rare keys (`q`, `j`, `z`) wherever you'd like. I also use combo `u +
 
 For Russian I use another custom layout with somewhat decent stats (I guess):
 ```
-. ё ы й г ю      ф ц к л ш
-э и о а м х      щ д н р т ъ
+  ё ы й г ю      ф ц к л ш
+  и о а м х      щ д н р т
   у я ь с ж      б в п ч з
         е
 ```
@@ -70,6 +70,19 @@ Note: btw you can get a little bit better stats without thumb key (less sfb, mor
 ![MonkeyType results on Russian 1k words 10 test after few months of not intense practice](./images/ru-progress.png)
 
 My current PBs on short MonkeyType tests (10 words, 1k set) are: for English is 92wpm, for Russian is 91wpm. So in terms of speed this RU layout is the same as Promethium and "safe" to use.
+
+There is another good Russian layout [vestnik](https://github.com/nxtk/vestnik-layout).
+I learn mirrored version:
+```
+  э я а п ф      х г р д ц
+  и е о в ь      б к н т с
+  ю у ы й ж      ч м л з ш
+```
+Pros for vestnik:
+* no need for thumb key
+* good letters placement that make sense
+
+So give it a shot!
 
 ---
 

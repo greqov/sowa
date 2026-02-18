@@ -71,6 +71,64 @@ Note: btw you can get a little bit better stats without thumb key (less sfb, mor
 
 My current PBs on short MonkeyType tests (10 words, 1k set) are: for English is 92wpm, for Russian is 91wpm. So in terms of speed this RU layout is the same as Promethium and "safe" to use.
 
+### But wait! There is more!
+
+Searching a better place for a `г` letter results into new layout:
+
+```
+  э ы й ж ф      щ ч р п б
+  и о а д ш      х в н т к
+  у я ь с ю      ц м л г з
+          е
+```
+Note: I use a combo `м + г` for `ться`.
+
+oxey's stats:
+```
+Finger usage:
+
+finger 0: 	10.14% 	finger 9: 	6.40%
+finger 1: 	14.10% 	finger 8: 	10.72%
+finger 2: 	10.44% 	finger 7: 	15.46%
+finger 3: 	10.64% 	finger 6: 	10.45%
+
+Left hand: 45.33%   	Right hand: 43.02%
+Left center: 1.502% 	Right center: 1.783%
+Home keys usage: 48.98%
+
+Sfb% per finger:
+finger 0: 	0.014% 	finger 9: 	0.057%
+finger 1: 	0.095% 	finger 8: 	0.034%
+finger 2: 	0.117% 	finger 7: 	0.232%
+finger 3: 	0.425% 	finger 6: 	0.081%
+
+Sfb:  1.054%
+Dsfb: 5.989%
+Lsb:  0.708%
+
+Inrolls: 23.235%
+Outrolls: 12.275%
+Total Rolls: 35.510%
+Onehands: 1.466%
+
+Alternates: 39.383%
+Alternates (sfs): 9.941%
+Total Alternates: 49.325%
+
+Redirects: 3.549%
+BadRedirects: 0.155%
+Total Redirects: 3.704%
+
+Other: 5.115%
+Invalid: 4.880%
+
+```
+The main difference is lower redirects and better `г` placement. This layout has more sfbs but it's not a problem because they come from strong left index finger. You can get better stats after switching `д` and `г` keys but then it will be too much load for a right ring finger.
+
+![MonkeyType results on Russian 1k words 10 test](./images/ru-progress-2.png)
+
+In terms of comfort this new version feels the same (or maybe slightly better) as the previous one.
+
 ---
 
 ![SOWA layout](./images/sowa.png)

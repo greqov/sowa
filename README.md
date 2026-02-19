@@ -20,7 +20,9 @@ Note: place rare keys (`э`, `ъ`) wherever you'd like. I also use a combo `в +
 
 After few months of practice I can say this layout feels good. I have only one minor complain about `г` key (I press it with middle finger btw). It will be nice to have that key on the right side. I've tried a combo `в + п` but result was meh.
 
-oxey's stats:
+<details>
+  <summary>oxey's stats</summary>
+
 ```
 Finger usage:
 
@@ -59,6 +61,7 @@ Total Redirects: 5.072%
 Other: 4.669%
 Invalid: 4.880%
 ```
+</details>
 
 Note: btw you can get a little bit better stats without thumb key (less sfb, more lsb), didn't practice it:
 ```
@@ -83,7 +86,9 @@ Searching a better place for a `г` letter results into new layout:
 ```
 Note: I use a combo `м + г` for `ться`.
 
-oxey's stats:
+<details>
+  <summary>oxey's stats</summary>
+
 ```
 Finger usage:
 
@@ -123,7 +128,9 @@ Other: 5.115%
 Invalid: 4.880%
 
 ```
-The main difference is lower redirects and better `г` placement. This layout has more sfbs but it's not a problem because they come from strong left index finger. You can get better stats after switching `д` and `г` keys but then it will be too much load for a right ring finger.
+</details>
+
+The main differences are lower redirects and better `г` placement. This layout has more sfbs but it's not a problem because they come from strong left index finger. You can get better stats after switching `д` and `г` keys but then it will be too much load for a right ring finger.
 
 ![MonkeyType results on Russian 1k words 10 test](./images/ru-progress-2.png)
 

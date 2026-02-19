@@ -136,6 +136,66 @@ The main differences are lower redirects and better `г` placement. This layout 
 
 In terms of comfort this new version feels the same (or maybe slightly better) as the previous one.
 
+It seems like it's better to switch `д` and `з`:
+
+```
+  э ы й ж ф      щ ч р п б
+  и о а З ш      х в н т к
+  у я ь с ю      ц м л г Д
+          е
+```
+<details>
+  <summary>oxey's stats</summary>
+
+```
+Finger usage:
+
+finger 0: 	10.14% 	finger 9: 	7.77%
+finger 1: 	14.10% 	finger 8: 	10.72%
+finger 2: 	10.44% 	finger 7: 	15.46%
+finger 3: 	9.26% 	finger 6: 	10.45%
+
+Left hand: 43.95% 	  Right hand: 44.40%
+Left center: 1.502% 	Right center: 1.783%
+Home keys usage: 47.60%
+
+Sfb% per finger:
+finger 0: 	0.014% 	finger 9: 	0.050%
+finger 1: 	0.095% 	finger 8: 	0.034%
+finger 2: 	0.117% 	finger 7: 	0.232%
+finger 3: 	0.104% 	finger 6: 	0.081%
+
+Sfb:  0.726%
+Dsfb: 5.743%
+Lsb:  0.708%
+
+Inrolls: 22.811%
+Outrolls: 11.889%
+Total Rolls: 34.700%
+Onehands: 1.043%
+
+Alternates: 42.039%
+Alternates (sfs): 10.064%
+Total Alternates: 52.103%
+
+Redirects: 2.707%
+BadRedirects: 0.181%
+Total Redirects: 2.888%
+
+Other: 4.386%
+Invalid: 4.880%
+
+```
+</details>
+
+Pros:
+- less sbfs 1.0% -> 0.7%;
+- less redirects 3.5% -> 2.7%.
+
+Cons:
+- more load on right pinky 6.4% -> 7.8%;
+- less load on left index 10.6% -> 9.3%.
+
 ---
 
 ![SOWA layout](./images/sowa.png)

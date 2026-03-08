@@ -196,6 +196,10 @@ Cons:
 - more load on right pinky 6.4% -> 7.8%;
 - less load on left index 10.6% -> 9.3%.
 
+It feels way better despite increased load on the right pinky.
+![MonkeyType results on Russian 1k words 10 test Д/З flavor](./images/ru-progress-3.png)
+
+
 ---
 
 ![SOWA layout](./images/sowa.png)

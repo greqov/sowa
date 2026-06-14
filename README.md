@@ -136,6 +136,8 @@ The main differences are lower redirects and better `г` placement. This layout 
 
 In terms of comfort this new version feels the same (or maybe slightly better) as the previous one.
 
+### More changes please!
+
 It seems like it's better to switch `д` and `з`:
 
 ```

@@ -199,31 +199,11 @@ Cons:
 - less load on left index 10.6% -> 9.3%.
 
 It feels a way better despite increased load on the right pinky.
+
 ![MonkeyType results on Russian 1k words 10 test Д/З flavor](./images/ru-progress-3.png)
 
-### Usage
-
-Short description of layers usage. Work in progress.
-
-![All layout layers](./images/usage.png)
-
-Thanks to the combination of good layout and HRM (home row mods) you have access to almost all essential shortcuts for the left hand out of the box: `Ctrl + S`,`Ctrl + N`,`Ctrl + T`,`Ctrl + W`,`Ctrl + F`,`Ctrl + P`, `Ctrl + Shift + F`, etc.
-
-For other command editing operations use a separate `copy-paste` layer on `P` and `L` keys (for the left hand too obviously). Press `P + D` and `P + L` to copy / paste. For all other operations press `L` to access the layer (i.e. `L + P` for cut and so on). A workflow a little bit weird but... it works.
-
-OSS is a one-shot (aka sticky) Shift. I use it usually at the beginning of a sentence.
-
-DW is a "delete a word" i.e. `Ctrl + Backspace`. It's my the most used key.
-
-Hold `R` to access a navigation layer. HRM work surprisingly good with arrows here (i.e. `Ctrl + arrow`, `Ctrl + Shift + arrow`).
-
-Hold `G` to access a numbers layer. Press and hold `Shift` (i.e. `G + W`) to type corresponding symbols. Easy to remember. easy to use.
-
-I use only one combo. For English `U + Y` gives `qu`, for Russian `М + Г` gives `ться` (must have!).
-
----
-
-![SOWA layout](./images/sowa.png)
+### Legacy
 
 Obsolete SOWA layout. See [wiki page](https://github.com/greqov/sowa/wiki) for details.
 
+![SOWA layout](./images/sowa.png)

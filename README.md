@@ -2,9 +2,9 @@
 
 After buying a split keyboard I've decided to try a layout with thumb letter. For English I _strongly_ recommend **Hands Down Promethium** (bottom heavy variant):
 ```
-  v w g m [      ] \ . , ' z
-  s n t h k      q a e i c ;
-  f p d l x      j u o y b /
+  v w g m q      / ' . , x
+  s n t h k      ; a e i c
+  f p d l j      z u o y b
         r
 ```
 Note: place rare keys (`q`, `j`, `z`) wherever you'd like. I also use combo `u + y` for `qu`, it's quite helpful.
